@@ -1,34 +1,38 @@
-.header{
+.header {
     width: 100%;
     min-height: 70px;
     position: sticky;
-    top:0;
+    top: 0;
     left: 0;
     z-index: 2;
     box-shadow: 0 0px 3px #999;
 }
-.header .navbar{
+
+.header .navbar {
     width: 100%;
     height: 100%;
 }
-.header .logo h1{
+
+.header .logo h1 {
     font-size: 2rem;
-} 
+}
 
 /* ----------- Header Menu ---------- */
-.header .menu li{
+.header .menu li {
     padding: 5px;
     margin: 0 10px;
 }
 
-.header .menu .material-icons{
+.header .menu .material-icons {
     font-size: 32px;
     color: #999;
 }
-.header .menu .material-icons.active{
+
+.header .menu .material-icons.active {
     color: #17a2b8;
 }
-.header .menu .dropdown-menu{
+
+.header .menu .dropdown-menu {
     position: absolute;
     left: inherit;
     top: 66px;
@@ -36,14 +40,15 @@
 }
 
 .header .menu .dropdown_notification {
-    right: -96px;
-    background-color: #f1f1f1;
+    right: -94px;
+    background-color: #fff;
 }
-.header .menu label{
+
+.header .menu label {
     cursor: pointer;
 }
 
-.header .menu .notify_length{
+.header .menu .notify_length {
     position: absolute;
     top: 45%;
     left: 50%;
@@ -53,11 +58,16 @@
     font-size: 13px;
 }
 
+.header .menu .medium-avatar {
+    transform: translateY(-2px);
+}
+
 /* ---------- Header Search -------- */
-.header .search_form{
+.header .search_form {
     position: relative;
 }
-.header .search_form #search{
+
+.header .search_form #search {
     background: #fafafa;
     border: 1px solid #999;
     min-width: 250px;
@@ -67,7 +77,8 @@
     padding: 5px 10px;
     border-radius: 25px;
 }
-.header .search_form button{
+
+.header .search_form button {
     position: absolute;
     right: 5px;
     height: 100%;
@@ -80,7 +91,8 @@
     justify-content: center;
     align-items: center;
 }
-.header .search_form .search_icon{
+
+.header .search_form .search_icon {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -88,11 +100,13 @@
     font-size: 14px;
     pointer-events: none;
 }
-.header .search_form .search_icon .material-icons{
+
+.header .search_form .search_icon .material-icons {
     font-size: 16px;
     transform: translateY(3px);
 }
-.header .search_form .close_search{
+
+.header .search_form .close_search {
     position: absolute;
     top: 50%;
     right: 40px;
@@ -101,7 +115,8 @@
     font-weight: 900;
     color: crimson;
 }
-.header .search_form .users{
+
+.header .search_form .users {
     position: absolute;
     width: 100%;
     min-width: 250px;
@@ -112,7 +127,8 @@
     border-radius: 5px;
     z-index: 999;
 }
-.header .search_form .loading{
+
+.header .search_form .loading {
     position: absolute;
     top: 50%;
     right: 15px;
@@ -120,4 +136,3 @@
     height: 15px;
     transform: translateY(-50%);
 }
-

@@ -44,11 +44,10 @@ const Menu = () => {
             <i className="fas fa-heart"
               style={{ fontSize: '30px', color: notify.data.length > 0 ? "#17a2b8" : "#999" }}
             />
-            {/* <span className="notify_length">{notify.data.length}</span> */}
           </span>
 
           <div
-            className="dropdown-menu dropdown_notification p-0"
+            className="dropdown-menu dropdown_notification"
             aria-labelledby="navbarDropdown"
           >
             <NotifyModal />
