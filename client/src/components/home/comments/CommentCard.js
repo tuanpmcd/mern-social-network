@@ -125,7 +125,7 @@ const CommentCard = ({ children, comment, post, commentId }) => {
                     {moment(comment.createdAt).fromNow()}
                   </small>
                   <small className="font-weight-bold mr-3" style={{ fontSize: "12px", opacity: "0.8" }}>
-                    {comment.likes.length} Likes
+                    {comment.likes.length} {comment.likes.length > 1 ? " Likes" : " Like"}
                   </small>
                 </>
               )}

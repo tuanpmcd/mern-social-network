@@ -8,7 +8,7 @@ import InputComment from './home/InputComment'
 
 const PostCard = ({post, theme}) => {
     return (
-        <div className="card my-3"> 
+        <div className="card my-3 px-2"> 
             <CardHeader post={post} />
             <CardBody post={post} theme={theme} />
             <CardFooter post={post} />

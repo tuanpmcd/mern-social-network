@@ -2,12 +2,14 @@
   width: 100%;
   min-height: 100vh;
 }
+
 /* ------ Info ---------- */
 .info {
   width: 100%;
   margin: auto;
   padding: 20px 10px;
 }
+
 .info_container {
   display: flex;
   flex-wrap: wrap;
@@ -21,32 +23,42 @@
   opacity: 0.7;
   margin: 0 15px;
 }
+
+.info_content .story {
+  margin-top: 10px;
+}
+
+.info_content > p {
+  font-size: 14px;
+}
+
 .info_content_title {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
+
 .info_content_title h4 {
   font-size: 1.5rem;
   font-weight: 400;
   transform: translateY(4px);
   flex: 4;
 }
+
 .info_content_title button {
   flex: 1;
+  margin-top: 10px;
 }
+
 .info_container .follow_btn {
+  font-size: 14px;
+  margin-top: 5px;
   color: teal;
   cursor: pointer;
 }
+
 .info_container .follow_btn span:hover {
   text-decoration: underline;
-}
-
-.story {
-  border: 1px solid #999;
-  border-radius: 5px;
-  padding: 10px;
 }
 
 /* -------------- Profile Edit ------------ */
@@ -59,8 +71,9 @@
   background: #0008;
   z-index: 9;
   overflow: auto;
-  scrollbar-width: none; 
+  scrollbar-width: none;
 }
+
 .edit_profile form {
   max-width: 450px;
   width: 100%;
@@ -70,15 +83,18 @@
   margin: 20px auto;
   position: relative;
 }
+
 .edit_profile .btn_close {
   position: absolute;
   top: 1rem;
   right: 1rem;
   cursor: pointer;
 }
+
 .edit_profile .form-group {
   margin: 0;
 }
+
 .edit_profile .info_avatar {
   width: 100px;
   height: 100px;
@@ -89,12 +105,14 @@
   border: 1px solid #ddd;
   cursor: pointer;
 }
+
 .edit_profile .info_avatar img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
 }
+
 .edit_profile .info_avatar span {
   position: absolute;
   bottom: -100%;
@@ -106,9 +124,11 @@
   transition: 0.3s ease-in-out;
   background: #fff6;
 }
+
 .edit_profile .info_avatar:hover span {
   bottom: -15%;
 }
+
 .edit_profile .info_avatar #file_up {
   position: absolute;
   top: 0;
@@ -118,6 +138,7 @@
   cursor: pointer;
   opacity: 0;
 }
+
 ::-webkit-file-upload-button {
   cursor: pointer;
 }
@@ -132,6 +153,7 @@
   height: 100vh;
   z-index: 4;
 }
+
 .follow_box {
   width: 350px;
   border: 1px solid #222;
@@ -143,11 +165,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .follow_content {
   width: 100%;
   height: 350px;
   overflow: auto;
 }
+
 .follow_box .close {
   position: absolute;
   top: 10px;
@@ -164,6 +188,7 @@
   border-top: 1px solid #17a2b8;
   border-bottom: 1px solid #17a2b8;
 }
+
 .profile_tab button {
   outline: none;
   border: none;
@@ -174,6 +199,7 @@
   margin: 0 25px;
   opacity: 0.5;
 }
+
 .profile_tab button.active {
   color: #17a2b8;
   opacity: 1;

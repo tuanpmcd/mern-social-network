@@ -100,11 +100,11 @@ const CardFooter = ({ post }) => {
 
       <div className="d-flex justify-content-between">
         <h6 style={{ padding: "0 25px", cursor: "pointer" }}>
-          {post.likes.length} Likes
+          {post.likes.length} {post.likes.length > 1 ? " Likes" : " Like"}
         </h6>
 
         <h6 style={{ padding: "0 25px", cursor: "pointer" }}>
-          {post.comments.length} Comments
+          {post.comments.length} {post.comments.length > 1 ? " Comments" : " Comment"}
         </h6>
       </div>
 
